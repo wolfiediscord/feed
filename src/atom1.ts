@@ -17,7 +17,7 @@ export default (ins: Feed) => {
       _attributes: { xmlns: "http://www.w3.org/2005/Atom" },
       id: options.id,
       title: options.title,
-      updated: options.updated ? options.updated.toISOString() : new Date().toISOString(),
+      updated: options.updated,
       generator: sanitize(options.generator || generator)
     }
   };
